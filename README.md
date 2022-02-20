@@ -76,13 +76,15 @@ Install required dependencies for the next step:
 npm install
 ```
 
-Copy `.env.sample` to a new file called `.env` and add your Postgres database credentials. Then, run the H3 index update script. This will add H3 indexes, truncated to the first 10 significant characters, to the `hex_res8` column of the `kontur_population` table:
+Copy `.env.sample` to a new file called `.env` and add your Postgres database credentials.
+
+Then, run the H3 index update script. This will add H3 indexes, truncated to the first 10 significant characters, to the `hex_res8` column of the `kontur_population` table:
 
 ```bash
 npm run update-h3-index
 ```
 
-And that's it! You can create the final using the following query and export to CSV using your favorite tool:
+And that's it! You can create the final dataset using the following query and export to CSV using your favorite tool:
 
 ```sql
 select hex_res8, population
