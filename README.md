@@ -1,6 +1,6 @@
 # H3 Population Helium
 
-An global population dataset based on Uber's H3 mapping system and seeded from the open source [Kontur Population](https://data.humdata.org/dataset/kontur-population-dataset) dataset.
+A global population dataset based on Uber's H3 mapping system and seeded from the open source [Kontur Population](https://data.humdata.org/dataset/kontur-population-dataset) dataset.
 
 Optimized for easy consumption in [Helium](https://www.helium.com/) mapping projects.
 
