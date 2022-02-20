@@ -84,6 +84,8 @@ Then, run the H3 index update script. This will add H3 indexes, truncated to the
 npm run update-h3-index
 ```
 
+### 5. Use or export data
+
 And that's it! You can create the final dataset using the following query and export to CSV using your favorite tool:
 
 ```sql
