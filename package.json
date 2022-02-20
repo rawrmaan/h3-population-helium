@@ -1,0 +1,22 @@
+{
+  "name": "h3-population-helium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-h3-index": "ts-node update-h3-index.ts"
+  },
+  "author": "Arman Dezfuli-Arjomandi",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "10.5.0",
+    "typescript": "4.5.5"
+  },
+  "dependencies": {
+    "dotenv": "16.0.0",
+    "h3-js": "3.7.2",
+    "knex": "1.0.3",
+    "pg": "8.7.3"
+  }
+}
