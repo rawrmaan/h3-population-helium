@@ -6,9 +6,13 @@ Optimized for easy consumption in [Helium](https://www.helium.com/) mapping proj
 
 ## Using the data
 
-Download the latest `kontur_population_20211109.csv` from this repository. The CSV file contains two columns:
-- **hex_res8:** h3 index truncated to first 10 chars
-- **population:** total human population in this hex
+Download the latest `kontur_population_20211109.csv.zip` from this repository and extract it to your working directory.
+
+The CSV file contains no header and two columns:
+- **hex_res8 (string):** H3 index at resolution 8 truncated to first 10 chars. For example, the hex `8828309565fffff` will be `8828309565`. If you need the full H3 index for any hex, simply append `fffff`.
+- **population (integer):** Total human population in this hex
+
+The file is hundreds of megabytes, so it's recommended to import it into a database like Postgres for use. You can find an example of how to import a CSV into Postgres in [this StackOverflow answer](https://stackoverflow.com/a/30951435/219092).
 
 ## Preparing Kontur Population dataset in PostgreSQL from scratch
 
@@ -70,7 +74,7 @@ add column hex_res8 text;
 create unique index on kontur_population (hex_res8);
 ```
 
-Install required dependencies for the next step:
+Clone this repo, then install required dependencies for the next step:
 
 ```bash
 npm install
